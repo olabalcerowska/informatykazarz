@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #eee;
+  font-family: "Inter", sans-serif;
+}
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: rgb(67, 89, 67);
+  box-shadow: 0 1px 10px rgb(150, 150, 150);
+  transition: 0.5s;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+p {
+  padding: 10px 0;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  line-height: 20px;
+  text-align: justify;
+}
+section {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  text-align: center;
+}
+section div {
+  width: 60%;
+}
+section:nth-child(even) {
+  background: #e6e6e6;
+}
+nav div:nth-child(1) {
+  display: flex;
+}
+nav div:nth-child(1) img {
+  margin: 11px 5px 0 0;
+  width: 35px;
+  height: 35px;
+}
+header {
+  font-size: 25px;
+  line-height: 70px;
+  font-weight: 600;
+  color: white;
+}
+.menu {
+  font-size: 20px;
+  line-height: 70px;
+}
+.menu a {
+  margin: 0 5px;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 9px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.menu a:hover {
+  color: black;
+  background-color: #eee;
+}
+.content {
+  display: block;
+  width: 100%;
+  background: #eee;
+  margin-top: 70px;
+}
+.content > div {
+  height: 100px;
+  font-size: 30px;
+  line-height: 100px;
+  font-weight: 600;
+  text-align: center;
+}
+button,
+input[type="submit"] {
+  margin: 25px 0 !important;
+  width: 150px;
+  padding: 5px;
+  background: rgb(67, 89, 67);
+  border: none;
+
+  cursor: pointer;
+}
+button a,
+input[type="submit"] {
+  border-radius: 81px;
+  color: white;
+  text-decoration: none;
+}
+footer {
+  display: flex;
+  background: #ddd;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 100px;
+  color: rgb(89, 89, 89);
+}
+.about {
+  display: block;
+}
+form {
+  height: 600px;
+  justify-content: center;
+}
+input[type="text"],
+input[type="textarea"] {
+  display: block;
+  width: 500px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  section div {
+    width: 90%;
+  }
+  .menu {
+    font-size: 16px;
+  }
+}
